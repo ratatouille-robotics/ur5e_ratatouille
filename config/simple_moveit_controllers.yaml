@@ -1,5 +1,5 @@
 controller_list:
-  - name: manipulator_controller
+  - name: scaled_pos_joint_traj_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: True
@@ -10,9 +10,3 @@ controller_list:
       - wrist_1_joint
       - wrist_2_joint
       - wrist_3_joint
-  - name: gripper_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: True
-    joints:
-      - hande_joint_finger

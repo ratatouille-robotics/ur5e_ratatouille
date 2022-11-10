@@ -364,32 +364,30 @@
     </joint>
     <link name="shelf_link">
         <inertial>
-            <origin rpy="0 0 0" xyz="1.2144 -1.9048 0" />
+            <origin rpy="0 0 0" xyz="0.455 0.65394 -0.16246" />
             <mass value="8" />
-            <inertia ixx="43.793" ixy="-2.508E-15" ixz="1.5406E-15" iyy="53.728" iyz="0.033181" izz="10.98" />
+            <inertia ixx="7.5485" ixy="4.2827E-15" ixz="8.4412E-16" iyy="5.7792" iyz="-0.0824" izz="12.615" />
         </inertial>
         <visual>
-            <origin rpy="0 0 0" xyz="-1.2 2 -1.5" />
+            <origin rpy="0 0 0" xyz="-0.455 0 0" />
             <geometry>
                 <mesh filename="package://mrm_test/meshes/base_link.STL" />
-                <!-- filename="package://mrm_test/meshes/Shelf_new.STL" /> -->
             </geometry>
             <material name="">
-                <color rgba="0.79216 0.81961 0.93333 1" />
+                <color rgba="0.8 0.847 0.647 1" />
             </material>
         </visual>
         <collision>
-            <origin rpy="0 0 0" xyz="-1.2 2 -1.5" />
+            <origin rpy="0 0 0" xyz="-0.455 0 0" />
             <geometry>
                 <mesh filename="package://mrm_test/meshes/base_link.STL" />
-                <!-- filename="package://mrm_test/meshes/Shelf_new.STL" /> -->
             </geometry>
         </collision>
     </link>
     <joint name="shelf_joint" type="fixed">
         <axis xyz="0 0 1" />
         <limit effort="1000.0" lower="0" upper="0" velocity="0" />
-        <origin rpy="0 0 3.14" xyz="0 -0.5 0" />
+        <origin rpy="1.57 0 3.14" xyz="0 -0.54 0" />
         <parent link="base_link" />
         <child link="shelf_link" />
     </joint>
@@ -402,7 +400,7 @@
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0" />
             <geometry>
-                <box size="0.43 0.43 0.9" />
+                <box size="1.08 1.08 0.9" />
             </geometry>
         </collision>
         <visual>
@@ -665,7 +663,7 @@
     <joint name="realsense_link" type="fixed">
         <axis xyz="0 0 1" />
         <limit effort="1000.0" lower="0" upper="0" velocity="0" />
-        <origin rpy="0 0 0" xyz="0.025 -0.065 -0.02" />
+        <origin rpy="0 0 0" xyz="-0.025 0.065 -0.02" />
         <parent link="wrist_3_link" />
         <child link="realsense_link" />
     </joint>

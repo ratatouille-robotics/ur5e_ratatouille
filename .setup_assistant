@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mrm_test
+    relative_path: urdf/rata.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ur5e_robot.srdf
+  CONFIG:
+    author_name: Harshit
+    author_email: ag.harshit@yahoo.com
+    generated_timestamp: 1668048558

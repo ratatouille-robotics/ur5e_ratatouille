@@ -13,16 +13,6 @@ joint_limits:
     max_velocity: 3.141592653589793
     has_acceleration_limits: false
     max_acceleration: 0
-  hande_joint_finger:
-    has_velocity_limits: true
-    max_velocity: 0.15
-    has_acceleration_limits: false
-    max_acceleration: 0
-  robotiq_hande_base_to_hande_right_finger:
-    has_velocity_limits: true
-    max_velocity: 0.15
-    has_acceleration_limits: false
-    max_acceleration: 0
   shoulder_lift_joint:
     has_velocity_limits: true
     max_velocity: 3.141592653589793
